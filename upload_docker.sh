@@ -6,10 +6,13 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
-
+dockerpath=theokwesi/app
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 
+docker tag theokwesi/app:latest
 # Step 3:
 # Push image to a docker repository
+echo "pushing to dockerhub...."
+docker push theokwesi/app:latest
