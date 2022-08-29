@@ -18,3 +18,19 @@
 [2022-08-08 13:40:47,769] INFO in app: Prediction: 
 [20.35373177134412]
 127.0.0.1 - - [08/Aug/2022 13:40:47] "POST /predict HTTP/1.1" 200 -
+
+#########################################################
+
+#### FROM PORT-FORWARDED TERMINAL
+
+./run_kubernetes.sh
+pod/microservice unchanged
+service/microservice configured
+NAME           READY   STATUS    RESTARTS   AGE
+microservice   1/1     Running   0          13m
+Forwarding from 127.0.0.1:8080 -> 80
+Forwarding from [::1]:8080 -> 80
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 8080
